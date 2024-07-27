@@ -1,11 +1,11 @@
 <header>
-    <div class="flex gap-x-12 bg-black justify-between items-center w-full p-5">
+    <div class="flex bg-black justify-between items-center w-full p-5">
         <!-- Logo -->
         <img src="images/logo.svg" class="w-40" alt="Logo" />
 
         <!-- Search Bar -->
         <div
-            class="flex items-center bg-white/20 p-2 h-12 rounded-lg shadow-md w-full"
+            class="flex items-center bg-white/20 p-2 h-12 rounded-lg shadow-md w-[70vw]"
         >
             <select
                 class="select select-ghost w-40 max-w-xs bg-transparent text-white rounded-l-lg border-none outline-none"
@@ -40,9 +40,7 @@
 
         <!-- Cart and Login Buttons -->
         <div class="flex items-center gap-4 text-white">
-            <button
-                class="flex items-center gap-2 py-2 px-4 hover:bg-primary transition duration-100"
-            >
+            <button class="btn btn-ghost px-8">
                 <svg
                     width="20"
                     height="20"
@@ -57,11 +55,9 @@
                 </svg>
                 Cart
             </button>
-            <button
-                class="bg-primary hover:bg-green-200 px-4 py-2 transition duration-100"
-            >
-                Login
-            </button>
+            <a href="/login">
+                <button class="btn btn-primary px-8">Login</button>
+            </a>
         </div>
     </div>
     <!-- Navigation Links -->

@@ -6,6 +6,11 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/contacts', function () {
-    return view('pages.contacts');
+Route::get('/products', function () {
+    return view('pages.products');
+});
+
+
+Route::get('/login', function () {
+    return view('pages.login');
 });
