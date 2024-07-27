@@ -1,59 +1,118 @@
-<header class="navbar bg-base-100">
+<header class="navbar bg-base-100 px-20 py-4">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl" href="/">daisyUI</a>
+        <a href="/">
+            <img
+                src="images/logo.svg"
+                alt="Omnitrance Solutions, Inc."
+                class="w-40 fill-current"
+            />
+        </a>
     </div>
     <div class="flex-none">
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-          <div class="indicator">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-            <span class="badge badge-sm indicator-item">8</span>
-          </div>
-        </div>
-        <div
-          tabindex="0"
-          class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-          <div class="card-body">
-            <span class="text-lg font-bold">8 Items</span>
-            <span class="text-info">Subtotal: $999</span>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-block">View cart</button>
+        <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                        />
+                    </svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                </div>
             </div>
-          </div>
+            <div
+                tabindex="0"
+                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+            >
+                <div class="card-body">
+                    <span class="text-lg font-bold">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                        <button class="btn btn-primary btn-block">
+                            View cart
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-          </div>
+        <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                        clip-rule="evenodd"
+                    />
+                </svg>
+                <p>John Doe</p>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                </svg>
+            </div>
+            <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-lg z-[1] mt-3 w-52 p-2 shadow"
+            >
+                <li class="">
+                    <a class="justify-start rounded-md py-2"
+                        ><svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="text-red-300"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M4.50037 17.6923V7.60001L2.95037 4.22126C2.8657 4.03526 2.86062 3.84359 2.93512 3.64626C3.00945 3.44876 3.13954 3.30776 3.32537 3.22326C3.5112 3.13859 3.70287 3.13084 3.90037 3.20001C4.09787 3.26934 4.23887 3.39692 4.32337 3.58276L6.14262 7.55001H17.8581L19.6774 3.58276C19.7619 3.39692 19.9029 3.26676 20.1004 3.19226C20.2979 3.11792 20.4895 3.12826 20.6754 3.22326C20.8612 3.30776 20.9913 3.44876 21.0656 3.64626C21.1401 3.84359 21.135 4.03526 21.0504 4.22126L19.5004 7.60001V17.6923C19.5004 18.1909 19.3238 18.6169 18.9706 18.9703C18.6173 19.3234 18.1913 19.5 17.6926 19.5H6.30812C5.80945 19.5 5.38345 19.3234 5.03012 18.9703C4.67695 18.6169 4.50037 18.1909 4.50037 17.6923ZM10.0004 12.75H14.0004C14.2132 12.75 14.3914 12.6782 14.5349 12.5345C14.6785 12.391 14.7504 12.2128 14.7504 12C14.7504 11.7872 14.6785 11.609 14.5349 11.4655C14.3914 11.3218 14.2132 11.25 14.0004 11.25H10.0004C9.78754 11.25 9.60937 11.3218 9.46587 11.4655C9.3222 11.609 9.25037 11.7872 9.25037 12C9.25037 12.2128 9.3222 12.391 9.46587 12.5345C9.60937 12.6782 9.78754 12.75 10.0004 12.75ZM6.30812 18H17.6926C17.7825 18 17.8562 17.9712 17.9139 17.9135C17.9715 17.8558 18.0004 17.7821 18.0004 17.6923V9.05001H6.00037V17.6923C6.00037 17.7821 6.0292 17.8558 6.08687 17.9135C6.14454 17.9712 6.21829 18 6.30812 18Z"
+                                fill="#1C1B1F"
+                            />
+                        </svg>
+                        Purchase Request
+                    </a>
+                </li>
+                <li class="">
+                    <a class="justify-start rounded-md text-red-500 py-2 pl-4"
+                        ><svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M4.79167 2.5C3.53343 2.5 2.5 3.53343 2.5 4.79167V15.2083C2.5 16.4666 3.53343 17.5 4.79167 17.5H12.2917C13.5499 17.5 14.5833 16.4666 14.5833 15.2083C14.5845 15.1255 14.5692 15.0433 14.5383 14.9664C14.5074 14.8896 14.4616 14.8196 14.4034 14.7606C14.3453 14.7017 14.276 14.6548 14.1996 14.6229C14.1232 14.5909 14.0412 14.5744 13.9583 14.5744C13.8755 14.5744 13.7935 14.5909 13.7171 14.6229C13.6407 14.6548 13.5714 14.7017 13.5132 14.7606C13.4551 14.8196 13.4092 14.8896 13.3783 14.9664C13.3475 15.0433 13.3322 15.1255 13.3333 15.2083C13.3333 15.7909 12.8743 16.25 12.2917 16.25H4.79167C4.20907 16.25 3.75 15.7909 3.75 15.2083V4.79167C3.75 4.20907 4.20907 3.75 4.79167 3.75H12.2917C12.8743 3.75 13.3333 4.20907 13.3333 4.79167C13.3322 4.87449 13.3475 4.95671 13.3783 5.03357C13.4092 5.11042 13.4551 5.18037 13.5132 5.23936C13.5714 5.29834 13.6407 5.34517 13.7171 5.37714C13.7935 5.40911 13.8755 5.42557 13.9583 5.42557C14.0412 5.42557 14.1232 5.40911 14.1996 5.37714C14.276 5.34517 14.3453 5.29834 14.4034 5.23936C14.4616 5.18037 14.5074 5.11042 14.5383 5.03357C14.5692 4.95671 14.5845 4.87449 14.5833 4.79167C14.5833 3.53343 13.5499 2.5 12.2917 2.5H4.79167ZM13.9518 6.45182C13.8274 6.45185 13.7059 6.48899 13.6027 6.55849C13.4996 6.62799 13.4195 6.72668 13.3727 6.84194C13.326 6.95721 13.3147 7.0838 13.3403 7.20552C13.3659 7.32724 13.4272 7.43856 13.5164 7.52523L15.3662 9.375H6.45833C6.37551 9.37383 6.29329 9.38913 6.21643 9.42001C6.13958 9.4509 6.06963 9.49675 6.01064 9.5549C5.95166 9.61305 5.90483 9.68235 5.87286 9.75876C5.84089 9.83517 5.82443 9.91717 5.82443 10C5.82443 10.0828 5.84089 10.1648 5.87286 10.2412C5.90483 10.3177 5.95166 10.3869 6.01064 10.4451C6.06963 10.5033 6.13958 10.5491 6.21643 10.58C6.29329 10.6109 6.37551 10.6262 6.45833 10.625H15.3662L13.5164 12.4748C13.4565 12.5324 13.4086 12.6013 13.3756 12.6777C13.3426 12.754 13.3252 12.8361 13.3243 12.9193C13.3235 13.0024 13.3392 13.0849 13.3707 13.1619C13.4021 13.2389 13.4486 13.3088 13.5074 13.3676C13.5662 13.4264 13.6361 13.4729 13.7131 13.5043C13.7901 13.5358 13.8726 13.5515 13.9557 13.5507C14.0389 13.5498 14.121 13.5324 14.1973 13.4994C14.2737 13.4664 14.3426 13.4185 14.4002 13.3586L17.3169 10.4419C17.4341 10.3247 17.4999 10.1657 17.4999 10C17.4999 9.83427 17.4341 9.67532 17.3169 9.55811L14.4002 6.64144C14.342 6.58144 14.2723 6.53375 14.1952 6.50118C14.1182 6.46861 14.0354 6.45183 13.9518 6.45182Z"
+                                fill="#EB5757"
+                            />
+                        </svg>
+                        Logout
+                    </a>
+                </li>
+            </ul>
         </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li>
-            <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
-          <li><a href="/contacts">Contacts</a></li>
-          <li><a>Settings</a></li>
-          <li><a>Logout</a></li>
-        </ul>
-      </div>
     </div>
-  </header>
+</header>
