@@ -4,7 +4,7 @@ export default {
         themes: [
             {
                 mytheme: {
-                    primary: "#00a5ff",
+                    primary: "#3E67C9",
 
                     secondary: "#00c5e2",
 
@@ -30,6 +30,7 @@ export default {
                     "--border-btn": "1px", // border width of buttons
                     "--tab-border": "1px", // border width of tabs
                     "--tab-radius": "0.5rem", // border radius of tab
+                    "--input-bordered": "12px",
                 },
             },
         ],
