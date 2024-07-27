@@ -41,7 +41,7 @@
         <!-- Cart and Login Buttons -->
         <div class="flex items-center gap-4 text-white">
             <button
-                class="flex items-center gap-2 py-2 px-4 hover:bg-blue-500 transition duration-100"
+                class="flex items-center gap-2 py-2 px-4 hover:bg-primary transition duration-100"
             >
                 <svg
                     width="20"
@@ -58,7 +58,7 @@
                 Cart
             </button>
             <button
-                class="bg-blue-500 hover:bg-green-200 px-4 py-2 transition duration-100"
+                class="bg-primary hover:bg-green-200 px-4 py-2 transition duration-100"
             >
                 Login
             </button>

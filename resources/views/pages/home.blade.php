@@ -2,27 +2,23 @@
 
 <!-- header section start -->
 <section
-    style="background-image: url(images/36115\ 1.png)"
+    style="background-image: url(images/home_header.png)"
     class="w-full min-h-screen bg-no-repeat bg-cover bg-center relative"
 >
     <div
-        class="min-h-screen w-full absolute bg-black bg-opacity-50 hero-section"
+        class="min-h-screen w-full absolute bg-black bg-opacity-50 "
     >
         <!-- header start -->
         <header
-            class="flex items-center justify-between bg-gradient-to-b from-[#000] absolute w-full"
+            class="flex items-center justify-between bg-gradient-to-b from-[#000] absolute w-full pt-4 pb-12 px-8"
         >
             <!-- logo -->
-            <img
-                src="images/logo/Group 4.png"
-                class="w-40 p-5 md:w-60"
-                alt=""
-            />
+            <img src="images/logo.svg" class="w-40 p-5 md:w-60" alt="" />
             <!-- nav bar -->
             <div class="text-white flex gap-5 px-4 items-center">
-                <a href="cart.html">
+                <a href="/cart">
                     <button
-                        class="flex gap-1 hover:bg-blue-500 p-2 duration-100"
+                        class="flex items-center justify-between gap-1 p-2 duration-100"
                     >
                         <svg
                             width="20"
@@ -39,17 +35,15 @@
                         Cart
                     </button>
                 </a>
-                <a href="login.html"
-                    ><button class="hover:bg-blue-500 p-2 duration-100">
-                        Login
-                    </button></a
+                <a href="/login"
+                    ><button class="btn btn-primary text-xl f px-8">Login</button></a
                 >
             </div>
         </header>
         <!-- header end -->
         <!-- header content start -->
-        <div class="hero-content">
-            <div class="mt-20 md:mt-30">
+        <div class="flex flex-col gap-y-8">
+            <div class="mt-72">
                 <h1
                     class="text-white mb-4 font-bold mx-auto text-center text-2xl md:text-5xl"
                 >
@@ -64,24 +58,26 @@
                     Institutional needs items and equipment's
                 </p>
             </div>
-            <div class="flex justify-center mt-5 mx-5">
+            <!-- Search Start -->
+            <div
+                class="flex items-center backdrop-blur-xl p-2 h-14 rounded-lg shadow-md w-2/4 self-center border-2 border-white/20"
+            >
                 <select
-                    name=""
-                    class="flex bg-transparent backdrop-blur-lg text-slate-300 py-2 px-2 gap-1 rounded-l-xl items-center border-r-2 border-slate-400"
-                    id=""
+                    class="select select-ghost w-40 max-w-xs bg-transparent text-white rounded-l-lg border-none outline-none"
                 >
-                    <!-- select,search -->
-                    <option value="">Select Category</option>
-                    <option value="adsfa">asdfa</option>
+                    <option disabled selected>Select Category</option>
+                    <option>Svelte</option>
+                    <option>Vue</option>
+                    <option>React</option>
                 </select>
                 <div
-                    class="flex rounded-r-lg backdrop-blur-lg py-2 px-2 gap-1 items-center"
+                    class="flex border-l-2 border-white/20 items-center bg-transparent text-white py-2 px-3 flex-1"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        class="size-4 text-white"
+                        class="h-6 w-6 text-white"
                     >
                         <path
                             fill-rule="evenodd"
@@ -90,15 +86,20 @@
                         />
                     </svg>
                     <input
-                        class="outline-none bg-transparent text-white w-[40vw] md:w-[60vw] lg:w-[40vw]"
                         type="text"
+                        class="bg-transparent outline-none text-white pl-2 rounded-r-lg w-full"
                         placeholder="Search for products, Brand and more..."
                     />
                 </div>
             </div>
+            <!-- Search End -->
             <!-- options menus -->
             <div class="text-white py-4 flex flex-wrap justify-center px-6">
-                <button class="new-box">Tables</button>
+                <button
+                    class="p-2 bg-[#FFFFFF] text-black border-2 border-slate-300/40 rounded-full hover:bg-slate-500 duration-300 m-1"
+                >
+                    Tables
+                </button>
                 <button
                     class="p-2 bg-[#FFFFFF] text-black border-2 border-slate-300/40 rounded-full hover:bg-slate-500 duration-300 m-1"
                 >
